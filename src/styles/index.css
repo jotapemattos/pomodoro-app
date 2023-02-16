@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Solitreo&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #d8d5de;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #d8d5de;
+    font-size: 20px;
+    text-anchor: middle;
+    font-family: Roboto;
+    font-weight: bold;
+  }
+
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #27272a;
+    /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+    stroke-linecap: round;
+  }
