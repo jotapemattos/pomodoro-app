@@ -13,10 +13,10 @@ const NavBar = ({handleTheme, themeSelected}: SwitchThemeType) => {
     <div className="w-full h-navbar flex items-center justify-between text-white font-handLetter font-extrabold p-4 bg-gradient-to-br from-zinc-800 to-white/5 backdrop-opacity-80 shadow-xl">
         <span className="w-2/3 md:justify-start xl:justify-center flex items-center justify-center gap-4">
             <h1 className="text-xl md:text-2xl lg:text-3xl">StudyingTime - PomodoroApp</h1>
-            <p className="hidden md:max-2xl:flex text-lg md:text-xl lg:text-3xl">⏱️💻</p>
+            <p className="hidden md:max-2xl:flex xl:flex text-lg md:text-xl lg:text-3xl">⏱️💻</p>
         </span>
         <div className="font-mainfont w-1/2 md:max-2xl:w-2/3 flex items-center justify-center xl:justify-center md:justify-end gap-4">
-            <div className="hidden md:max-2xl:block">
+            <div className="hidden md:max-2xl:block xl:block">
                 <h3 className="text-white text-md md:text-xl xl:text-2xl font-mainfont">Pick a theme</h3>
             </div>
             
