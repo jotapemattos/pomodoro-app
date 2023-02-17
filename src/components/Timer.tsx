@@ -7,6 +7,7 @@ import { TimesContext } from '../context/TimesContext';
 import { Pause, Play, Repeat } from 'phosphor-react';
 import birdSound from '../sounds/birdSound.wav'
 import { SettingsContext } from '../context/SettingsTimesContext';
+import { PercentageContext } from '../context/PercentagesContext';
 
 
 interface TimerProps {
@@ -22,10 +23,8 @@ interface TimerProps {
 const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, setStart, method }: TimerProps) => {
   const { pomodoroTime, shortBreakTime, longBreakTime, setPomodoroTime, setShortBreakTime, setLongBreakTime} = useContext(TimesContext)
   const { settingsValuesPomodoro, settingsValuesShort, settingsValuesLong} = useContext(SettingsContext)
+  const {percentagePomodoro, setPercentagePomodoro, percentageShort, setPercentageShort, percentageLong, setPercentageLong} = useContext(PercentageContext)
   const [count, setCount] = useState(1)
-  const [percentagePomodoro, setPercentagePomodoro] = useState(100)
-  const [percentageShort, setPercentageShort] = useState(100)
-  const [percentageLong, setPercentageLong] = useState(100)
   const audioWorkin = new Audio(birdSound)
     
   useEffect(()=>{                                       
@@ -39,9 +38,14 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
 
   useEffect(()=>{                                       
     setPercentageLong(Math.floor((longBreakTime / totalSeconds) * 100))
-    if (percentageLong === 0) {audioWorkin.play()}
+    if (percentageLong === 0) audioWorkin.play()
   }, [longBreakTime])
   
+  useEffect(()=>{
+    setPercentageShort(100)
+    setPercentageLong(100)
+  },[method === 'pomodoro'])
+
   useInterval(() => {
     if (start && pomodoroTime > 0) {
       setPomodoroTime(pomodoroTime - 1)

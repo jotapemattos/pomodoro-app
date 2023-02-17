@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react"
+import { PercentageContext } from "../context/PercentagesContext"
 import { SettingsContext } from "../context/SettingsTimesContext"
 import { TimesContext } from "../context/TimesContext"
 import Settings from "./Settings"
@@ -9,6 +10,7 @@ import Timer from "./Timer"
 const MainContent = () => {
   const { pomodoroTime, shortBreakTime, longBreakTime, setPomodoroTime, setShortBreakTime, setLongBreakTime} = useContext(TimesContext) 
   const { settingsValuesPomodoro,  settingsValuesShort,  settingsValuesLong} = useContext(SettingsContext)
+  const {percentagePomodoro, setPercentagePomodoro, percentageShort, setPercentageShort, percentageLong, setPercentageLong} = useContext(PercentageContext)
   const [start, setStart] = useState(false)
   const [method, setMethod] = useState('')
   const [totalSeconds, setTotalSeconds] = useState(0)
