@@ -12,7 +12,9 @@ function App() {
   }
 
   return (
-    <div className="bg-no-repeat bg-cover w-screen h-screen" style={{backgroundImage: `url(/${themeSelected}.svg)`}}>
+    <div className="bg-no-repeat md:bg-no-repeat lg:bg-no-repeat xl:bg-no-repeat bg-cover md:bg-cover lg:bg-cover xl:bg-cover w-screen h-screen" 
+      style={{backgroundImage: `url(/${themeSelected}.svg)`}}
+    >
       <NavBar handleTheme={handleTheme} themeSelected={themeSelected}/>
       <div className='flex flex-col justify-center items-center h-main'>
         <MainContent/>
