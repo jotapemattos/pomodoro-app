@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import { PercentageContext } from '../context/PercentagesContext'
+import { useContext } from 'react'
 import { SettingsContext } from '../context/SettingsTimesContext'
 
 interface SwitchMethodProps {
@@ -11,7 +10,6 @@ interface SwitchMethodProps {
 
 const SwitchMethod = ({method, setPomodoro, setShortBreak, setLongBreak}: SwitchMethodProps) => {
     const { settingsValuesPomodoro,  settingsValuesShort,  settingsValuesLong} = useContext(SettingsContext)  
-    const {percentagePomodoro, setPercentagePomodoro, percentageShort, setPercentageShort, percentageLong, setPercentageLong} = useContext(PercentageContext)
   return (
     <nav className="flex justify-around items-center gap-4 text-white rounded-full w-4/5 h-timeOptions">
                 {method === 'pomodoro' ? (

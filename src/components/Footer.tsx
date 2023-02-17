@@ -1,5 +1,3 @@
-import * as Popover from '@radix-ui/react-popover';
-import { Article, X } from 'phosphor-react';
 import PopoverTechnique from './PopoverTechnique';
 
 const Footer = () => {
