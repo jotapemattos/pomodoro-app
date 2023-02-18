@@ -19,8 +19,8 @@ module.exports = {
       height: {
         'navbar': '12%',
         'main': '88%',
-        'timeOptions': '7%'
-      }
+        'timeOptions': '7%',
+      },
     }
   },
   plugins: []

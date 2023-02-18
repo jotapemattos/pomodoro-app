@@ -56,8 +56,8 @@ const MainContent = () => {
 
   return (
     <div className="h-full w-full min-w-screen flex items-center justify-center">
-        <div className="bg-gradient-to-br from-zinc-800 to-white/5 backdrop-opacity-80 shadow-xl w-4/5 h-main lg:w-2/3 lg:h-4/5 xl:h-main rounded-xl p-4 flex flex-col items-center justify-between">
-            <SwitchMethod method={method} setPomodoro={setPomodoro} setShortBreak={setShortBreak} setLongBreak={setLongBreak}/>
+        <div className="bg-gradient-to-br from-zinc-800 to-white/5 backdrop-opacity-80 shadow-xl w-4/5 h-4/5 lg:w-2/3 lg:h-4/5 xl:w-1/3 xl:h-main rounded-xl p-4 flex flex-col items-center justify-between">
+              <SwitchMethod method={method} setPomodoro={setPomodoro} setShortBreak={setShortBreak} setLongBreak={setLongBreak}/>
               <Timer setPomodoro={setPomodoro} setShortBreak={setShortBreak} setLongBreak={setLongBreak} start={start} setStart={setStart} method={method} totalSeconds={totalSeconds}/>
               <Settings/>
         </div>
