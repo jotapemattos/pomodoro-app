@@ -17,7 +17,7 @@ const NavBar = ({handleTheme, themeSelected}: SwitchThemeType) => {
         </span>
         <div className="font-mainfont w-1/2 md:max-2xl:w-2/3 flex items-center justify-center xl:justify-center md:justify-end gap-4">
             <div className="hidden md:max-2xl:block xl:block">
-                <h3 className="text-white text-md md:text-xl xl:text-2xl font-mainfont">Pick a theme</h3>
+                <h3 className="text-white text-md md:text-xl xl:text-xl font-mainfont">Pick a theme</h3>
             </div>
             
             <select 
