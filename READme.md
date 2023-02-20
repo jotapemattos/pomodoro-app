@@ -12,16 +12,6 @@ Project developed for my portfolio. However, it was built with the intention of 
 
 <br>
 
-## 🚀 Technologies
-
-- React 
-- Typescript
-- Tailwind
-- [Node e NPM](https://nodejs.org/)
-- [Vite](https://vitejs.dev/)
-
-<br>
-
 ## 💻 Project
 
  <h3>What is the pomodoro technique?</h3>
@@ -34,6 +24,24 @@ Project developed for my portfolio. However, it was built with the intention of 
     <p> - Work on it until time is up 👨‍💻</p>  
     <p> - Take a 5 minute break ☕</p>  
     <p> - Every 4 pomodoros, take a long break (10/15 min) 🌳</p>    
+
+<br>
+
+## 🚀 Technologies
+
+- React 
+- Typescript
+- Tailwind
+- [Node e NPM](https://nodejs.org/)
+- [Vite](https://vitejs.dev/)
+
+<br>
+
+## 📚 Libraries
+
+- [Radix](https://www.radix-ui.com/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [React Circular Progressbar](https://www.npmjs.com/package/react-circular-progressbar)
 
 <br>
 
