@@ -21,7 +21,7 @@ const PopoverTechnique = () => {
                             <div className='flex flex-col gap-3 w-full justify-center text-sm'>
                                 <div className='flex items-center gap-4'>
                                     <p>STEP 1</p>
-                                    <p>Pick a tesk ✏️</p>
+                                    <p>Pick a task ✏️</p>
                                 </div>
                                 <div className='flex items-center gap-4'>
                                     <p>STEP 2</p>
