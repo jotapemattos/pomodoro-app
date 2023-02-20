@@ -97,7 +97,7 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
 
   return (
     <div className="flex flex-col items-center justify-around gap-8">
-      <div className='w-4/5 xl:w-full'>
+      <div className='w-3/4 xl:w-full'>
       {method === 'pomodoro' && <CircularProgressbar  strokeWidth={4} value={percentagePomodoro} text={`${convertTime(pomodoroTime)}`} />}
       {method === 'shortbreak' && <CircularProgressbar  strokeWidth={4} value={percentageShort} text={`${convertTime(shortBreakTime)}`} />}
       {method === 'longbreak' && <CircularProgressbar  strokeWidth={4} value={percentageLong} text={`${convertTime(longBreakTime)}`} />}
@@ -107,7 +107,7 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
           className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-110 transition-all duration-300"
           onClick={() => setStart(true)}
         >
-          <Play size={32} weight='fill' color="#ffffff" />
+          <Play size={32} weight='fill' color="#ffffff" className='w-7 h-7 xl:w-full xl:h-full'/>
         </button>)}
 
         {start === true && (
@@ -115,14 +115,14 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
             className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-110 transition-all duration-300"
             onClick={() => setStart(false)}
           >
-            <Pause size={32} weight='fill' color="#ffffff" />
+            <Pause size={32} weight='fill' color="#ffffff" className='w-7 h-7 xl:w-full xl:h-full'/>
           </button>
         )}
         <button
           className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-110 transition-all duration-300"
           onClick={handleRestart}
         >
-          <Repeat size={32} weight='fill' color="#ffffff" />
+          <Repeat size={32} weight='fill' color="#ffffff" className='w-7 h-7 xl:w-full xl:h-full'/>
         </button>
       </div>
     </div>

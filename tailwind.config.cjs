@@ -17,10 +17,14 @@ module.exports = {
         'spring': "url('/spring.svg')"
       },
       height: {
-        'navbar': '12%',
-        'main': '88%',
+        'navbar': '10%',
+        'main': '86%',
         'timeOptions': '7%',
+        'footer': '4%'
       },
+      width: {
+        'infoWidth': '98%'
+      }
     }
   },
   plugins: []

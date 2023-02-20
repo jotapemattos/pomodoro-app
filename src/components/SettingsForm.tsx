@@ -11,7 +11,7 @@ const SettingsForm = () => {
         <div className="flex flex-col gap-8">
             <div className="flex">
                 <div className="flex flex-col w-1/3 text-center items-center font-bold font-mainfont">
-                    <label>Pomodoro</label>
+                    <label>Pomodoro Time</label>
                     <input type="text" value={settingsValuesPomodoro/60} onChange={event => setSettingsValuesPomodoro(Number(event.target.value)*60)} className="w-4/5 bg-transparent border-2 border-b-black outline-none" />
                 </div>
                 <div className="flex flex-col w-1/3 text-center items-center font-bold font-mainfont">

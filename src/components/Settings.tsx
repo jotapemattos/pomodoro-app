@@ -11,12 +11,12 @@ const Settings = () => {
         >
           <div className='flex items-center gap-4 text-white font-mainfont font-extrabold text-xl p-4'>
             <span>Settings</span>
-            <Gear size={32} weight='fill'/>
+            <Gear size={32} weight='fill' className='w-7 h-7 xl:w-full xl:h-full'/>
           </div>
         </Dialog.Trigger>
           <Dialog.Portal>
             <Dialog.Overlay />
-              <Dialog.Content className='absolute p-10 bg-white/90 rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-8'>
+              <Dialog.Content className='absolute p-10 bg-white/90 rounded-2xl w-5/6 xl:w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-8'>
                     <Dialog.Title className='font-handLetter text-2xl font-extrabold'>
                       Settings
                     </Dialog.Title>
