@@ -19,7 +19,7 @@ Project developed for my portfolio. However, it was built with the intention of 
  <h3>Why use the pomodoro method?</h3>
     <p>With this strategy, what is being done is seen more clearly by the person, making them feel more productive. In addition, each break is designed not to overwhelm your mind. Making your task more productive.</p>
  <h3>How it works?</h3>
-    <p> - Pick a tesk ✏️</p> 
+    <p> - Pick a task ✏️</p> 
     <p> - Set a 25 minutes timer ⌛</p>  
     <p> - Work on it until time is up 👨‍💻</p>  
     <p> - Take a 5 minute break ☕</p>  
