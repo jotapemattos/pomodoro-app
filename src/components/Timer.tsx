@@ -26,7 +26,8 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
   const {percentagePomodoro, setPercentagePomodoro, percentageShort, setPercentageShort, percentageLong, setPercentageLong} = useContext(PercentageContext)
   const audioWorkin = new Audio(birdSound)
   const [count, setCount] = useState(1)
-    
+  
+  //every time the seconds update, the percentage is updated together
   useEffect(()=>{                                       
     setPercentagePomodoro(Math.floor((pomodoroTime / totalSeconds) * 100))
   }, [pomodoroTime])
@@ -41,11 +42,8 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
     if (percentageLong === 0) audioWorkin.play()
   }, [longBreakTime])
   
-  useEffect(()=>{
-    setPercentageShort(100)
-    setPercentageLong(100)
-  },[method === 'pomodoro'])
-
+ 
+  //decrease the seconds in pomodoro time
   useInterval(() => {
     if (start && pomodoroTime > 0) {
       setPomodoroTime(pomodoroTime - 1)
@@ -56,6 +54,7 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
     }
   }, 1000)
 
+  //decrease the seconds in short break time
   useInterval(() => {
     if (start && shortBreakTime > 0) {
       setShortBreakTime(shortBreakTime - 1)
@@ -65,6 +64,7 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
     }
   }, 1000)
 
+  //decrease the seconds in long break time
   useInterval(() => {
     if (start && longBreakTime > 0) {
       setLongBreakTime(longBreakTime - 1)
