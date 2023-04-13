@@ -104,7 +104,7 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
       </div>
       <div className='flex gap-10 md:gap-8 lg:gap-10'>
         {(start === false) && (<button
-          className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-110 transition-all duration-300"
+          className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-95 transition-all duration-300"
           onClick={() => setStart(true)}
         >
           <Play size={32} weight='fill' color="#ffffff" className='w-7 h-7 xl:w-full xl:h-full'/>
@@ -112,14 +112,14 @@ const Timer = ({totalSeconds, setPomodoro, setShortBreak, setLongBreak, start, s
 
         {start === true && (
           <button
-            className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-110 transition-all duration-300"
+            className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-95 transition-all duration-300"
             onClick={() => setStart(false)}
           >
             <Pause size={32} weight='fill' color="#ffffff" className='w-7 h-7 xl:w-full xl:h-full'/>
           </button>
         )}
         <button
-          className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-110 transition-all duration-300"
+          className="bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl p-2 rounded-lg hover:bg-white/5 hover:scale-95 transition-all duration-300"
           onClick={handleRestart}
         >
           <Repeat size={32} weight='fill' color="#ffffff" className='w-7 h-7 xl:w-full xl:h-full'/>

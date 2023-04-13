@@ -4,7 +4,7 @@ import SettingsForm from './SettingsForm';
 
 const Settings = () => {
   return (
-    <div className='flex justify-center gap-2 items-center bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl rounded-xl h-timeOptions hover:scale-110 hover:bg-white/5 transition-all duration-300'>
+    <div className='flex justify-center gap-2 items-center bg-gradient-to-br from-white/10 to-white/20 backdrop-opacity-80 shadow-xl rounded-xl h-timeOptions hover:scale-95 hover:bg-white/5 transition-all duration-300'>
       <Dialog.Root>
         <Dialog.Trigger
           type='button'
