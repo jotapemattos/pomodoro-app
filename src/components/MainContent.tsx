@@ -8,9 +8,8 @@ import Timer from "./Timer"
 
 
 const MainContent = () => {
-  const { pomodoroTime, shortBreakTime, longBreakTime, setPomodoroTime, setShortBreakTime, setLongBreakTime} = useContext(TimesContext) 
+  const { setPomodoroTime, setShortBreakTime, setLongBreakTime} = useContext(TimesContext) 
   const { settingsValuesPomodoro,  settingsValuesShort,  settingsValuesLong} = useContext(SettingsContext)
-  const {percentagePomodoro, setPercentagePomodoro, percentageShort, setPercentageShort, percentageLong, setPercentageLong} = useContext(PercentageContext)
   const [start, setStart] = useState(false)
   const [method, setMethod] = useState('')
   const [totalSeconds, setTotalSeconds] = useState(0)
